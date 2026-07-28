@@ -1,0 +1,889 @@
+/* =====================================
+   GOOGLE FONT
+===================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* =====================================
+   RESET
+===================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#F8FAFC;
+
+    color:#1E293B;
+
+    line-height:1.7;
+
+}
+
+/* =====================================
+   GLOBAL
+===================================== */
+
+section{
+
+    padding:100px 10%;
+
+}
+
+img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+/* =====================================
+   NAVBAR
+===================================== */
+
+header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    background:white;
+
+    box-shadow:0 2px 20px rgba(0,0,0,.08);
+
+    z-index:1000;
+
+}
+
+.navbar{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    height:80px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.logo{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#2563EB;
+
+}
+
+.nav-menu{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+.nav-menu a{
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.nav-menu a:hover{
+
+    color:#2563EB;
+
+}
+
+/* =====================================
+   SECTION TITLE
+===================================== */
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.section-title h2{
+
+    font-size:42px;
+
+    margin-bottom:10px;
+
+}
+
+.section-title p{
+
+    color:#64748B;
+
+}
+
+/* =====================================
+   CONTAINER
+===================================== */
+
+.about-container,
+.skills-container,
+.projects-container,
+.contact-container{
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+/* =====================================
+   HERO
+===================================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:80px;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+.hero-content{
+
+    flex:1;
+
+}
+
+.hero-badge{
+
+    display:inline-block;
+
+    padding:10px 18px;
+
+    background:#DBEAFE;
+
+    color:#2563EB;
+
+    border-radius:999px;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+}
+
+.hero h1{
+
+    font-size:64px;
+
+    line-height:1.1;
+
+    margin-bottom:15px;
+
+}
+
+.hero h2{
+
+    font-size:34px;
+
+    color:#475569;
+
+    margin-bottom:25px;
+
+}
+
+.hero p{
+
+    max-width:550px;
+
+    color:#64748B;
+
+    margin-bottom:40px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.btn-primary{
+
+    background:#2563EB;
+
+    color:white;
+
+    padding:16px 34px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-primary:hover{
+
+    background:#1D4ED8;
+
+    transform:translateY(-3px);
+
+}
+
+.btn-secondary{
+
+    border:2px solid #2563EB;
+
+    color:#2563EB;
+
+    padding:16px 34px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-secondary:hover{
+
+    background:#2563EB;
+
+    color:white;
+
+}
+
+.hero-image{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.hero-image img{
+
+    width:380px;
+
+    height:380px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    box-shadow:0 20px 60px rgba(37,99,235,.25);
+
+}
+
+/* =====================================
+   ABOUT
+===================================== */
+
+.about-container{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:60px;
+
+    align-items:start;
+
+}
+
+.about-text h3{
+
+    font-size:32px;
+
+    margin-bottom:20px;
+
+}
+
+.about-text p{
+
+    color:#64748B;
+
+    margin-bottom:20px;
+
+}
+
+.about-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.info-card{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:16px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+
+    transition:.3s;
+
+}
+
+.info-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.info-card h4{
+
+    color:#2563EB;
+
+    margin-bottom:10px;
+
+}
+
+/* =====================================
+   SKILLS
+===================================== */
+
+.skills-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+.skill-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.06);
+
+    transition:.3s;
+
+}
+
+.skill-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(37,99,235,.15);
+
+}
+
+.skill-card h3{
+
+    color:#2563EB;
+
+    margin-bottom:15px;
+
+}
+
+.skill-card p{
+
+    color:#64748B;
+
+}
+
+/* =====================================
+   PROJECTS
+===================================== */
+
+.projects-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.project-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(37,99,235,.15);
+
+}
+
+.project-card img{
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+.project-card h3{
+
+    margin:20px 20px 10px;
+
+}
+
+.project-card p{
+
+    margin:0 20px 20px;
+
+    color:#64748B;
+
+}
+
+.project-button{
+
+    display:inline-block;
+
+    margin:0 20px 25px;
+
+    padding:12px 22px;
+
+    background:#2563EB;
+
+    color:white;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.project-button:hover{
+
+    background:#1D4ED8;
+
+}
+
+/* =====================================
+   CONTACT
+===================================== */
+
+.contact-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+.contact-card{
+
+    background:white;
+
+    padding:35px;
+
+    text-align:center;
+
+    border-radius:18px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.06);
+
+    transition:.3s;
+
+}
+
+.contact-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.contact-card h3{
+
+    color:#2563EB;
+
+    margin-bottom:15px;
+
+}
+
+.contact-card p{
+
+    color:#64748B;
+
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+.footer{
+
+    background:#0F172A;
+
+    color:white;
+
+    padding:70px 10%;
+
+}
+
+.footer-content{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.footer h3{
+
+    font-size:30px;
+
+    margin-bottom:20px;
+
+}
+
+.footer p{
+
+    color:#CBD5E1;
+
+}
+
+.footer-links{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    margin:35px 0;
+
+}
+
+.footer-links a{
+
+    transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+    color:#60A5FA;
+
+}
+
+.copyright{
+
+    margin-top:30px;
+
+    font-size:14px;
+
+    color:#94A3B8;
+
+}
+
+/* =====================================
+   RESPONSIVE - TABLET
+===================================== */
+
+@media (max-width: 992px){
+
+    .hero{
+
+        flex-direction:column-reverse;
+
+        text-align:center;
+
+        padding-top:120px;
+
+    }
+
+    .hero p{
+
+        margin:0 auto 40px;
+
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+    }
+
+    .hero-image img{
+
+        width:300px;
+
+        height:300px;
+
+    }
+
+    .about-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .skills-container{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .projects-container{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .contact-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* =====================================
+   RESPONSIVE - MOBILE
+===================================== */
+
+@media (max-width: 768px){
+
+    section{
+
+        padding:80px 7%;
+
+    }
+
+    .navbar{
+
+        flex-direction:column;
+
+        height:auto;
+
+        padding:20px;
+
+        gap:20px;
+
+    }
+
+    .nav-menu{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:15px;
+
+    }
+
+    .hero h1{
+
+        font-size:46px;
+
+    }
+
+    .hero h2{
+
+        font-size:24px;
+
+    }
+
+    .hero-image img{
+
+        width:240px;
+
+        height:240px;
+
+    }
+
+    .skills-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .projects-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .footer-links{
+
+        flex-wrap:wrap;
+
+        gap:18px;
+
+    }
+
+}
+
+/* =====================================
+   PREMIUM EFFECTS
+===================================== */
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#E2E8F0;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#2563EB;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#1D4ED8;
+
+}
+
+/* Smooth Animation */
+
+section{
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Better Hover */
+
+.project-card,
+.skill-card,
+.info-card,
+.contact-card{
+
+    transition:all .35s ease;
+
+}
+
+.project-card:hover,
+.skill-card:hover,
+.info-card:hover,
+.contact-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+/* Button Glow */
+
+.btn-primary{
+
+    box-shadow:0 10px 25px rgba(37,99,235,.25);
+
+}
+
+.btn-primary:hover{
+
+    box-shadow:0 20px 35px rgba(37,99,235,.35);
+
+}
+
