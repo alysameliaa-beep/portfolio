@@ -661,61 +661,64 @@ header{
 
 @media (max-width: 992px){
 
+    section{
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .navbar{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
     .hero{
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 45px;
+        padding-top: 130px;
+        padding-bottom: 70px;
+    }
 
-        flex-direction:column-reverse;
-
-        text-align:center;
-
-        padding-top:120px;
-
+    .hero-content{
+        width: 100%;
+        min-width: 0;
     }
 
     .hero p{
-
-        margin:0 auto 40px;
-
+        margin: 0 auto 35px;
     }
 
     .hero-buttons{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 
-        justify-content:center;
-
+    .hero-image{
+        width: 100%;
     }
 
     .hero-image img{
-
-        width:300px;
-
-        height:300px;
-
+        width: 300px;
+        height: 300px;
     }
 
     .about-container{
-
-        grid-template-columns:1fr;
-
+        grid-template-columns: 1fr;
     }
 
     .skills-container{
-
-        grid-template-columns:repeat(2,1fr);
-
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .projects-container{
-
-        grid-template-columns:repeat(2,1fr);
-
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .contact-container{
-
-        grid-template-columns:1fr;
-
+        grid-template-columns: 1fr;
     }
-
 }
+
 
 /* =====================================
    RESPONSIVE - MOBILE
@@ -723,74 +726,284 @@ header{
 
 @media (max-width: 768px){
 
+    html,
+    body{
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
     section{
+        width: 100%;
+        padding: 70px 6%;
+    }
 
-        padding:80px 7%;
+    /* NAVBAR */
 
+    header{
+        width: 100%;
     }
 
     .navbar{
+        width: 100%;
+        height: auto;
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 12px;
+    }
 
-        flex-direction:column;
-
-        height:auto;
-
-        padding:20px;
-
-        gap:20px;
-
+    .logo{
+        font-size: 25px;
     }
 
     .nav-menu{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 18px;
+    }
 
-        flex-wrap:wrap;
+    .nav-menu a{
+        font-size: 14px;
+    }
 
-        justify-content:center;
 
-        gap:15px;
+    /* HERO */
 
+    .hero{
+        width: 100%;
+        min-height: auto;
+        padding-top: 210px;
+        padding-bottom: 80px;
+        gap: 35px;
+    }
+
+    .hero-content{
+        width: 100%;
+    }
+
+    .hero-badge{
+        font-size: 13px;
+        padding: 8px 14px;
+        margin-bottom: 20px;
     }
 
     .hero h1{
-
-        font-size:46px;
-
+        font-size: 40px;
+        line-height: 1.15;
+        word-wrap: break-word;
     }
 
     .hero h2{
+        font-size: 21px;
+        line-height: 1.5;
+    }
 
-        font-size:24px;
+    .hero p{
+        font-size: 14px;
+        line-height: 1.8;
+        margin-bottom: 30px;
+    }
 
+    .hero-buttons{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .btn-primary,
+    .btn-secondary{
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+        padding: 13px 20px;
+    }
+
+    .hero-image{
+        width: 100%;
     }
 
     .hero-image img{
-
-        width:240px;
-
-        height:240px;
-
+        width: 220px;
+        height: 220px;
     }
+
+
+    /* SECTION TITLE */
+
+    .section-title{
+        margin-bottom: 40px;
+    }
+
+    .section-title h2{
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .section-title p{
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+
+    /* ABOUT */
+
+    .about-container{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .about-text h3{
+        font-size: 24px;
+        line-height: 1.4;
+    }
+
+    .about-text p{
+        font-size: 14px;
+    }
+
+    .about-info{
+        gap: 15px;
+    }
+
+    .info-card{
+        padding: 20px;
+    }
+
+
+    /* SKILLS */
 
     .skills-container{
-
-        grid-template-columns:1fr;
-
+        grid-template-columns: 1fr;
+        gap: 18px;
     }
 
+    .skill-card{
+        padding: 24px;
+    }
+
+    .skill-card h3{
+        font-size: 20px;
+    }
+
+    .skill-card p{
+        font-size: 14px;
+    }
+
+
+    /* PROJECTS */
+
     .projects-container{
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
 
-        grid-template-columns:1fr;
+    .project-card{
+        width: 100%;
+    }
 
+    .project-card img{
+        width: 100%;
+        height: auto;
+        min-height: 180px;
+        object-fit: cover;
+    }
+
+    .project-card h3{
+        font-size: 20px;
+    }
+
+    .project-card p{
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+
+    /* CONTACT */
+
+    .contact-container{
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .contact-card{
+        width: 100%;
+        padding: 25px 20px;
+    }
+
+    .contact-card p{
+        font-size: 14px;
+        overflow-wrap: anywhere;
+    }
+
+
+    /* FOOTER */
+
+    .footer{
+        padding: 50px 6%;
+    }
+
+    .footer h3{
+        font-size: 26px;
+    }
+
+    .footer p{
+        font-size: 14px;
     }
 
     .footer-links{
-
-        flex-wrap:wrap;
-
-        gap:18px;
-
+        gap: 15px 25px;
+        flex-wrap: wrap;
     }
 
+    .footer-links a{
+        font-size: 14px;
+    }
+}
+
+
+/* =====================================
+   RESPONSIVE - SMALL MOBILE
+===================================== */
+
+@media (max-width: 400px){
+
+    section{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .hero{
+        padding-top: 200px;
+    }
+
+    .hero h1{
+        font-size: 34px;
+    }
+
+    .hero h2{
+        font-size: 19px;
+    }
+
+    .hero p{
+        font-size: 13px;
+    }
+
+    .hero-image img{
+        width: 190px;
+        height: 190px;
+    }
+
+    .section-title h2{
+        font-size: 28px;
+    }
+
+    .about-text h3{
+        font-size: 22px;
+    }
 }
 
 /* =====================================
